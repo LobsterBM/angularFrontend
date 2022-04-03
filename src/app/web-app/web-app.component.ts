@@ -52,6 +52,8 @@ export class WebAppComponent implements OnInit {
 
   viewApp(appID : number): void{
 
+    console.log(`view app ${appID}`);
+
     this.router.navigate([`webapps/${appID}`]);
 
   }

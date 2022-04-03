@@ -9,7 +9,7 @@
 
       <div class="comment-area"> <textarea class="form-control" placeholder="Got a comment?" rows="3" #commentArea></textarea> </div>
       <div class="text-center">
-        <button style="margin-bottom: 3%; margin-top: 3%; text-align: center ; "  type="button" class="btn btn-secondary " (click)="addFeedback(commentArea.value, ratingValue.value )   ;commentArea.value= '' ; " onclick="setTimeout(function(){window.location.reload(1);}, 500);">
+        <button style="margin-bottom: 3%; margin-top: 3%; text-align: center ; "  type="button" class="btn btn-secondary " (click)="addFeedback(commentArea.value, ratingValue.value )   ;commentArea.value= '' ; " >
           Submit
         </button>
 

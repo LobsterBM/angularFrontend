@@ -7,9 +7,9 @@ import {AppDetailComponent} from "../app/app-detail/app-detail.component";
 
 
 const routes: Routes = [
+  { path: 'webapps/:id', component: AppDetailComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'webapps', component: WebAppComponent },
-  { path: 'webapps/:id', component: AppDetailComponent },
   { path: 'login', component: LoginComponent }
 ];
 

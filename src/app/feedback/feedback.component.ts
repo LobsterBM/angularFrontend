@@ -51,11 +51,23 @@ export class FeedbackComponent implements OnInit {
       console.log("feedback res")
       console.log(res);
 
+      
+
     });
+
+    setTimeout(() => 
+    {
+      this.router.navigate([`webapps`]);
+    },
+    5000);
 
     let index = this.feedback.findIndex(x => x.user_id === Number(localStorage.getItem("user_id")));
     this.feedback[index].comment = comment;
     this.feedback[index].rating = Number(rating);
+
+  
+    
+    
 
 
 

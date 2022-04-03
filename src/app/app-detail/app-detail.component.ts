@@ -19,8 +19,10 @@ export class AppDetailComponent implements OnInit {
 
   getApp(): void {
 
-    this.webAppService.getApp(Number(this.route.snapshot.paramMap.get('id'))).subscribe((res: any) =>{
 
+    console.log("getting app");
+    this.webAppService.getApp(Number(this.route.snapshot.paramMap.get('id'))).subscribe((res: any) =>{
+      
 
       this.app = res[0];
       this.webAppService.getUser(res[0]["user_id"]).subscribe((res2: any) =>{

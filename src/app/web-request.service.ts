@@ -11,8 +11,10 @@ export class WebRequestService {
 
   readonly  ROOT_URL;
 
+
+
   constructor(private http : HttpClient) {
-    this.ROOT_URL = `https://backend-omark.herokuapp.com`;
+    this.ROOT_URL = 'https://backend-omark.herokuapp.com';
   }
 
 
@@ -58,6 +60,8 @@ export class WebRequestService {
   postNotation(uri : string, payload : Object){
     return this.http.post<Feedback[]>(`${this.ROOT_URL}/${uri}` , payload);
   }
+
+  
 
 
 
